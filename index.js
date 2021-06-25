@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.end("Llegaste a mi sitio versión 1");
+  res.end("Llegaste a mi sitio Versión 2");
 });
 
 app.get("/ejemplo", (req, res) => {
