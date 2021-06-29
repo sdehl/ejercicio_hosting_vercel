@@ -15,7 +15,7 @@ nunjucks.configure("views", {
   express: app,
 });
 app.set("view engine", "njk");
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, "public")));
 app.use(routes);
 
 // sequelize.sync({ force: true }).then(async () => {
