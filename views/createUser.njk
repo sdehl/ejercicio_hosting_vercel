@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Hack Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+  </head>
+  <body>
+    <div id="create-user" class="container pb-4">
+      <div class="shadow rounded p-4 my-4 bg-white">
+        <h1 class="fs-2">Crear usuario</h1>
+        <hr>
+        <form class="" action="usuarios" method="post" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="firstname" class="form-label">Nombre</label>
+            <input type="text" name="firstname" value="" placeholder="Ingresar nombre..." class="form-control" required="true"/>
+          </div>
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Apellido</label>
+            <input type="text" name="lastname" value="" placeholder="Ingresar apellido..." class="form-control" required="true"/>
+          </div>
+          <div class="mb-3">
+            <label for="avatar" class="form-label">Avatar</label>
+            <input type="file" name="avatar" accept=".jpg, .jpeg, .png" class="form-control" required="true"/>
+          </div>
+          <button type="submit" name="button" class="btn btn-success">
+            Guardar
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
