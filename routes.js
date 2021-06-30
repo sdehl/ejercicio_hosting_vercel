@@ -4,6 +4,6 @@ const userController = require("./controllers/userController");
 
 router.get("/", userController.create);
 router.get("/usuarios", userController.index);
-router.post("/usuarios", userController.store);
+router.post("/usuarios", userController.storeInS3);
 
 module.exports = router;
