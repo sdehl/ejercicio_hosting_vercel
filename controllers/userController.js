@@ -53,7 +53,7 @@ module.exports = {
       const s3 = new AWS.S3({
         apiVersion: process.env.AWS_S3_API_VERSION,
         accessKeyId: process.env.AWS_USER_ACCESS_KEY_ID,
-        secretAccessKey: process.env.WS_USER_SECRET_ACCESS_KEY,
+        secretAccessKey: process.env.AWS_USER_SECRET_ACCESS_KEY,
       });
 
       // Obtener extensión y nombre del archivo para subir
@@ -66,7 +66,7 @@ module.exports = {
           ACL: "public-read",
           Bucket: process.env.AWS_S3_BUCKET_NAME,
           Key: `avatars/${filename}`,
-          ContentType: "", // Sacar de formidable
+          ContentType: files.avatar.type, // Sacar de formidable
           Body: fs.createReadStream(files.avatar.path), // Sacar de formidable
         })
         .promise();
